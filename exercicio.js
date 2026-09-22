@@ -1,7 +1,4 @@
-// ======================================================
 // ARRAY COM OS LIVROS
-// ======================================================
-
 // const = cria uma variável que não será reatribuída
 // livros = nome da nossa variável
 // [] = array, onde vamos guardar vários livros
@@ -66,10 +63,7 @@ const livros = [
     }
 ];
 
-
-// ======================================================
 // ETAPA 1 - FOREACH
-// ======================================================
 
 // forEach = percorre todos os itens do array
 // Aqui ele vai passar por cada livro
@@ -83,10 +77,7 @@ livros.forEach(function(livro) {
 
 });
 
-
-// ======================================================
 // ETAPA 2 - FOREACH + TEMPLATE STRING
-// ======================================================
 
 // forEach = percorre todos os livros
 // ${} = coloca uma informação dentro de um texto
@@ -100,10 +91,7 @@ livros.forEach(function(livro) {
 
 });
 
-
-// ======================================================
 // ETAPA 3 - MAP
-// ======================================================
 
 // map = cria um NOVO array transformando os itens
 // Aqui vamos transformar cada objeto em apenas seu título
@@ -119,10 +107,7 @@ const titulos = livros.map(function(livro) {
 
 console.log(titulos);
 
-
-// ======================================================
 // ETAPA 4 - MAP
-// ======================================================
 
 // map = cria um novo array
 // Aqui vamos transformar cada livro em uma frase
@@ -135,10 +120,7 @@ const informacoes = livros.map(function(livro) {
 
 console.log(informacoes);
 
-
-// ======================================================
 // ETAPA 5 - FILTER
-// ======================================================
 
 // filter = filtra os itens do array
 // Ele mantém somente os itens que atendem à condição
@@ -166,10 +148,7 @@ livrosDisponiveis.forEach(function(livro) {
 
 });
 
-
-// ======================================================
 // ETAPA 6 - FILTER POR CATEGORIA
-// ======================================================
 
 // Criamos uma variável para guardar
 // a categoria que queremos procurar
@@ -197,10 +176,7 @@ livrosFantasia.forEach(function(livro) {
 
 });
 
-
-// ======================================================
 // ETAPA 7 - FILTER POR ANO
-// ======================================================
 
 // Queremos livros publicados a partir do ano 2000
 //
@@ -223,10 +199,7 @@ livrosRecentes.forEach(function(livro) {
 
 });
 
-
-// ======================================================
 // ETAPA 8 - REDUCE
-// ======================================================
 
 // reduce = acumula vários valores em um único resultado
 // Aqui vamos somar todos os preços
@@ -249,9 +222,7 @@ console.log(
 );
 
 
-// ======================================================
 // ETAPA 9 - PREÇO MÉDIO
-// ======================================================
 
 // Primeiro usamos o valor total que já calculamos
 // Depois dividimos pela quantidade de livros
@@ -267,10 +238,7 @@ console.log(
     `Preço médio dos livros: R$ ${precoMedio.toFixed(2)}`
 );
 
-
-// ======================================================
 // ETAPA 10 - FILTER + MAP
-// ======================================================
 
 // Primeiro usamos FILTER
 // para pegar somente os livros disponíveis
@@ -296,10 +264,7 @@ const titulosDisponiveis = livrosDisponiveis2.map(function(livro) {
 
 console.log(titulosDisponiveis);
 
-
-// ======================================================
 // ETAPA 11 - FILTER + REDUCE
-// ======================================================
 
 // Primeiro filtramos somente os livros disponíveis
 
@@ -326,10 +291,7 @@ console.log(
     `Valor dos livros disponíveis: R$ ${valorDisponiveis.toFixed(2)}`
 );
 
-
-// ======================================================
 // ETAPA 12 - FUNÇÃO DO RELATÓRIO
-// ======================================================
 
 // function = cria uma função
 // gerarRelatorio = nome da função
@@ -402,10 +364,7 @@ function gerarRelatorio(livros) {
 
 gerarRelatorio(livros);
 
-
-// ======================================================
 // DESAFIO FINAL - CONTAR POR CATEGORIA
-// ======================================================
 
 // Criamos uma função chamada contarPorCategoria
 // Ela recebe:
@@ -442,9 +401,7 @@ const totalFantasia = contarPorCategoria(livros, "Fantasia");
 console.log(`Livros de fantasia: ${totalFantasia}`);
 
 
-// ======================================================
 // DESAFIO EXTRA - LIVROS CAROS
-// ======================================================
 
 // Criamos uma função chamada obterLivrosCaros
 // Ela recebe:
